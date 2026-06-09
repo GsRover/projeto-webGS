@@ -231,10 +231,16 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     const btnMobile = document.getElementById('btn-mobile');
     const navMenu = document.getElementById('nav-menu');
+    const linksMenu = document.querySelectorAll('#nav-menu ul li a');
 
     if (btnMobile && navMenu) {
         btnMobile.addEventListener('click', function() {
             navMenu.classList.toggle('ativo');
+        });
+        linksMenu.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('ativo');
+            });
         });
     }
 });
