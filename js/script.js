@@ -199,3 +199,30 @@ function refazerQuiz() {
 }
 
 document.addEventListener("DOMContentLoaded", carregarQuiz);
+
+// --- LÓGICA DE VALIDAÇÃO DO FORMULÁRIO ---
+document.addEventListener("DOMContentLoaded", function() {
+    const formRover = document.getElementById('form-rover');
+    
+    if (formRover) {
+        formRover.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+            const msgErro = document.getElementById('msg-erro');
+            const msgSucesso = document.getElementById('msg-sucesso');
+            
+            msgErro.classList.add('escondido');
+            msgSucesso.classList.add('escondido');
+            
+            if (nome === '' || email === '' || mensagem === '') {
+                msgErro.classList.remove('escondido');
+            } else {
+                msgSucesso.classList.remove('escondido');
+                formRover.reset();
+            }
+        });
+    }
+});
