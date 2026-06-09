@@ -48,7 +48,7 @@ O projeto preza por uma estrutura limpa, moderna, responsiva e performática, ut
 
 ## 📂 Estrutura do Repositório
 
-
+```text
 ├── assets/                  # Imagens, logotipos e diagramas técnicos (.png, .svg)
 ├── css/
 │   └── estilo.css           # Arquivo principal de estilos e variáveis de tema
@@ -57,4 +57,5 @@ O projeto preza por uma estrutura limpa, moderna, responsiva e performática, ut
 ├── index.html               # Página principal da Landing Page
 ├── equipe.txt               # Arquivo com dados dos integrantes e link do repositório
 ├── AI.md                    # Relatório de interações e uso de IA no projeto
-└── READ.md                  # Explicação do projeto
+└── README.md                # Explicação do projeto
+```
