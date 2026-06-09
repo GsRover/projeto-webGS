@@ -741,7 +741,10 @@ body.tema-claro header {
     color: var(--color4);
     margin-bottom: 20px;
 }
-
+#secao-contato {
+    text-align: center;
+    padding: 20px 0;
+}
 #hr-contato {
     margin-bottom: 80px;
     color: var(--color1);
