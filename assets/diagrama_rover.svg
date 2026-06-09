@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 600" width="100%" height="100%" style="background-color: #0f172a; border: 2px solid #1e293b; border-radius: 12px; font-family: 'Courier New', monospace;">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <line x1="400" y1="40" x2="400" y2="560" stroke="#334155" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#334155" stroke-width="1" stroke-dasharray="5,5" />
+
+  <text x="40" y="50" fill="#38bdf8" font-size="18" font-weight="bold">DIAGRAMA TÉCNICO: HERMES ROVER (VISTA SUPERIOR)</text>
+  <text x="40" y="70" fill="#94a3b8" font-size="12">ESCALA SIMULADA: 1:10 | MODELO DE TRAÇÃO CENTRAL E ANCORAGEM</text>
+
+  <rect x="280" y="160" width="240" height="280" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="3" />
+  <text x="400" y="305" fill="#f8fafc" font-size="14" font-weight="bold" text-anchor="middle">CHASSI PRINCIPAL</text>
+  <text x="400" y="325" fill="#94a3b8" font-size="11" text-anchor="middle">(SISTEMA EMBARCADO ARDUINO)</text>
+
+  <rect x="310" y="200" width="180" height="70" fill="#0284c7" stroke="#0ea5e9" stroke-width="1" fill-opacity="0.6"/>
+  <line x1="370" y1="200" x2="370" y2="270" stroke="#0ea5e9" stroke-width="1" />
+  <line x1="430" y1="200" x2="430" y2="270" stroke="#0ea5e9" stroke-width="1" />
+
+  <g id="sensor-frontal">
+    <rect x="360" y="130" width="80" height="30" rx="5" fill="#334155" stroke="#f43f5e" stroke-width="2" />
+    <circle cx="385" cy="145" r="10" fill="#0f172a" stroke="#f43f5e" stroke-width="2" />
+    <circle cx="415" cy="145" r="10" fill="#0f172a" stroke="#f43f5e" stroke-width="2" />
+    <text x="400" y="115" fill="#f43f5e" font-size="11" font-weight="bold" text-anchor="middle">SENSOR HC-SR04</text>
+    <path d="M370,95 Q400,80 430,95" fill="none" stroke="#f43f5e" stroke-width="1.5" stroke-dasharray="2,2" />
+    <path d="M360,80 Q400,60 440,80" fill="none" stroke="#f43f5e" stroke-width="1.5" stroke-dasharray="2,2" />
+  </g>
+
+  <g id="roda-esquerda">
+    <rect x="230" y="250" width="48" height="100" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5" />
+    <line x1="230" y1="270" x2="278" y2="270" stroke="#38bdf8" stroke-width="1" />
+    <line x1="230" y1="290" x2="278" y2="290" stroke="#38bdf8" stroke-width="1" />
+    <line x1="230" y1="310" x2="278" y2="310" stroke="#38bdf8" stroke-width="1" />
+    <line x1="230" y1="330" x2="278" y2="330" stroke="#38bdf8" stroke-width="1" />
+    <rect x="278" y="290" width="3" height="20" fill="#38bdf8" />
+  </g>
+  
+  <g id="roda-direita">
+    <rect x="522" y="250" width="48" height="100" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5" />
+    <line x1="522" y1="270" x2="570" y2="270" stroke="#38bdf8" stroke-width="1" />
+    <line x1="522" y1="290" x2="570" y2="290" stroke="#38bdf8" stroke-width="1" />
+    <line x1="522" y1="310" x2="570" y2="310" stroke="#38bdf8" stroke-width="1" />
+    <line x1="522" y1="330" x2="570" y2="330" stroke="#38bdf8" stroke-width="1" />
+    <rect x="519" y="290" width="3" height="20" fill="#38bdf8" />
+  </g>
+
+  <g id="garra-se">
+    <line x1="280" y1="175" x2="210" y2="140" stroke="#a855f7" stroke-width="3" />
+    <circle cx="210" cy="140" r="8" fill="#0f172a" stroke="#a855f7" stroke-width="2" />
+    <polygon points="210,132 200,120 220,120" fill="#a855f7" />
+  </g>
+
+  <g id="garra-sd">
+    <line x1="520" y1="175" x2="590" y2="140" stroke="#a855f7" stroke-width="3" />
+    <circle cx="590" cy="140" r="8" fill="#0f172a" stroke="#a855f7" stroke-width="2" />
+    <polygon points="590,132 580,120 600,120" fill="#a855f7" />
+  </g>
+
+  <g id="garra-ie">
+    <line x1="280" y1="425" x2="210" y2="460" stroke="#a855f7" stroke-width="3" />
+    <circle cx="210" cy="460" r="8" fill="#0f172a" stroke="#a855f7" stroke-width="2" />
+    <polygon points="210,468 200,480 220,480" fill="#a855f7" />
+  </g>
+
+  <g id="garra-id">
+    <line x1="520" y1="425" x2="590" y2="460" stroke="#a855f7" stroke-width="3" />
+    <circle cx="590" cy="460" r="8" fill="#0f172a" stroke="#a855f7" stroke-width="2" />
+    <polygon points="590,468 580,480 600,480" fill="#a855f7" />
+  </g>
+
+  <path d="M 445,135 L 620,90" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="630" y="90" fill="#cbd5e1" font-size="12" alignment-baseline="middle">[01] SENSOR ULTRASSÔNICO FRONTAL</text>
+  <text x="630" y="105" fill="#94a3b8" font-size="10" alignment-baseline="middle">Mapeamento de relevo e detecção de tornados</text>
+
+  <path d="M 595,145 L 650,190 L 650,210" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="630" y="235" fill="#cbd5e1" font-size="12">[02] SISTEMA DE ANCORAGEM (4X)</text>
+  <text x="630" y="250" fill="#94a3b8" font-size="10">Ponteiras pneumáticas perfurantes</text>
+  <text x="630" y="265" fill="#a855f7" font-size="10" font-weight="bold">Acionamento: Servo Mecanismo (Pinos 2,3,4,5)</text>
+
+  <path d="M 230,300 L 120,300 L 120,320" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="40" y="350" fill="#cbd5e1" font-size="12">[03] TRAÇÃO DO CHASSI (2X MOTORES)</text>
+  <text x="40" y="365" fill="#94a3b8" font-size="10">Servos de Rotação Contínua 360º</text>
+  <text x="40" y="380" fill="#38bdf8" font-size="10" font-weight="bold">Localização centralizada p/ rotação em pivô</text>
+
+  <rect x="40" y="490" width="460" height="70" fill="#1e293b" stroke="#334155" rx="5" />
+  <text x="50" y="510" fill="#38bdf8" font-size="11" font-weight="bold">NOTAS DE ENGENHARIA INTERPLANETÁRIA:</text>
+  <text x="50" y="530" fill="#94a3b8" font-size="10">1. Configuração de 2 rodas permite giro de 360° no próprio eixo (pivô).</text>
+  <text x="50" y="545" fill="#94a3b8" font-size="10">2. Garras posicionadas nos vértices maximizam o momento de estabilidade.</text>
+
+</svg>
