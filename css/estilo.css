@@ -653,6 +653,87 @@ body.tema-claro header {
     to {opacity: 1}
 }
 
+/* --- QUIZ --- */
+#hr-quiz {
+    margin-bottom: 80px;
+    color: var(--color1);
+    border-inline: 450px solid var(--color1);
+}
+
+.quiz-box {
+    max-width: 800px;
+    margin: 0 auto 100px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--color3);
+    border-radius: 12px;
+    padding: 30px;
+    color: #fff;
+    text-align: left;
+}
+
+.pergunta-bloco {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color2);
+}
+
+.pergunta-bloco h3 {
+    color: var(--color4);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.opcao-label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.opcao-label:hover {
+    color: var(--color4);
+}
+
+.opcao-label input {
+    margin-right: 10px;
+    accent-color: var(--color3);
+}
+
+#btn-quiz, #btn-refazer {
+    background-color: var(--color3);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-family: var(--font-family);
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#btn-quiz:hover, #btn-refazer:hover {
+    background-color: var(--color4);
+    color: #000;
+}
+
+.escondido {
+    display: none;
+}
+
+#resultado-quiz {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#texto-resultado {
+    font-size: 2rem;
+    color: var(--color4);
+    margin-bottom: 20px;
+}
+
 
 
 
