@@ -226,3 +226,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// --- LÓGICA DO MENU HAMBÚRGUER ---
+document.addEventListener("DOMContentLoaded", function() {
+    const btnMobile = document.getElementById('btn-mobile');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (btnMobile && navMenu) {
+        btnMobile.addEventListener('click', function() {
+            navMenu.classList.toggle('ativo');
+        });
+    }
+});
