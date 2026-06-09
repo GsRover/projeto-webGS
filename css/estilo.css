@@ -517,6 +517,102 @@ footer {
   background: #38bdf8;
   border-radius: 8px;
 }
+
+/* Botões de Troca de Tema */
+.tema-botoes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.btn-tema {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid var(--color2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-tema:hover {
+    transform: scale(1.2);
+}
+
+.tema-padrao { background-color: #253149; }
+.tema-marte { background-color: #960435; }
+.tema-claro { background-color: #f0f0f0; }
+
+/* Tema 2: Marte */
+body.tema-marte {
+    --color1: #4a1515;
+    --color2: #d64933;
+    --color3: #ffb067;
+    --color4: #f4d35e;
+    background-color: #1a0505;
+}
+
+body.tema-marte #content {
+    background: linear-gradient(to top, var(--color2), #1a0505 10%);
+}
+
+/* Tema 3: Claro / High-Tech */
+body.tema-claro {
+    --color1: #333333;
+    --color2: #5e6c87;
+    --color3: #000000;
+    --color4: #960435;
+    background-color: #ffffff;
+}
+
+body.tema-claro #content {
+    background: linear-gradient(to top, #e0e0e0, #ffffff 15%);
+}
+
+/* Ajuste de contraste para as caixas de texto no tema claro */
+body.tema-claro #samplesec1, 
+body.tema-claro #samplesec2, 
+body.tema-claro #samplesec3, 
+body.tema-claro #samplesec4, 
+body.tema-claro #samplesec5, 
+body.tema-claro #samplesec6 {
+    background-color: #f4f4f4;
+    color: #111;
+    border-color: var(--color2);
+}
+
+body.tema-claro header {
+    background: #f4f4f4;
+    border-bottom: 2px solid var(--color2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
